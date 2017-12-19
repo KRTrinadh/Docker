@@ -1,0 +1,18 @@
+How to install docker in ubuntu 
+
+
+wget -qO- https://get.docker.com/ | sh
+apt-get install docker-compose
+docker build -t harish:latest1 .
+docker images
+<docker rmi repository:tag or imageid>
+
+docker pull ubuntu -  build image 
+if we have soucr code,then build images from source code by using "docker build" - only image 
+"docker run" command used to create containers from docker images 
+"docker compose" to build image and create container
+docker ps - display running containers info
+docker ps -a - all containers information 
+docker run -itd <image_name>
+docker exec -it <container_name> sh - connecting to container
+docker exec -it <container_name> ls /home - executing ls commands without connect to container 
